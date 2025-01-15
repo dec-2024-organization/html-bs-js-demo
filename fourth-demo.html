@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fourth Page</title>
+    <script>
+      let displayCities = function () {
+        let allCities = ["CHENNAI", "PUNE", "MUMBAI"];
+        let content = "<ul>";
+        for (let city of allCities) {
+          // content += "<li>" + city + "</li";
+          content += `<li>${city}</li>`;
+        }
+        content += "</ul>";
+        document.getElementById("para1").innerHTML = content;
+      };
+    </script>
+  </head>
+  <body>
+    <h2>List of Cities</h2>
+    <button type="button" onclick="displayCities()">Click</button>
+    <p id="para1"></p>
+  </body>
+</html>

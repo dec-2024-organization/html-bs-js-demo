@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Third Page</title>
+    <script>
+      let toggle = true;
+      let movieName = "Avengers: End Game";
+      function display() {
+        if (toggle) {
+          document.getElementById("para1").innerHTML = movieName;
+          document.getElementsByTagName("input")[0].value = movieName;
+        } else {
+          document.getElementById("para1").innerHTML = "";
+          document.getElementsByTagName("input")[0].value = "";
+        }
+        toggle = !toggle;
+      }
+      // let display = function() {
+      // }
+      // let display = () => {
+      // }
+    </script>
+  </head>
+  <body>
+    <button type="button" onclick="display()">
+      Click to display movie name
+    </button>
+    <input type="text" />
+    <p id="para1"></p>
+  </body>
+</html>
